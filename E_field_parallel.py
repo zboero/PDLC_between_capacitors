@@ -212,7 +212,7 @@ def relaxation( Phi, omega, l2_target, maxiter ):
 ##                                ( dy_cell**2 + dx**2 )                                # lower_x (left of the rectangle)
 
 
-        ##2nd-order Neumann B.C. along glass at infinity
+        ##1st-order Neumann B.C. along glass at infinity
 #        Phi[0,0]               = ( Phi[1,0] * dx**2 + Phi[0,1] * dy_glass**2 ) / \
 #                               ( dy_glass**2 + dx**2 )            # The field vanishes at the bottom of the glass (sim to - infty)
 #        Phi[0,-1]              = ( Phi[1,-1] * dx**2 +  Phi[0,-2] * dy_glass**2 ) / \
