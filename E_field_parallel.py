@@ -36,12 +36,17 @@ if host == 'local':
     data      = fileProj+'Auger_data_I/'                           # Events and Fluxes of Cosmic Rays
     graficos  = fileProj+'graphics/'                               # All the graphics
 
+    # Directory used to store the generated plots
+    output = graficos
+    
 elif host == 'IATE':
     root_home = '/home/zboero/'                                    # Clemente y IATE
     fileProj  = root_home+'Projects/CMB/'                          # Folder of work for the article
     data      = fileProj+'data/'                                   # Folder with the data
     graficos  = fileProj+'graphics/'                               # Folder with the plots
-    #
+
+    # Directory used to store the generated plots
+    output = graficos
 
 import numpy as np
 import pandas as pd
